@@ -1,0 +1,16 @@
+---
+layout: layout.njk
+title: Wooden play structures
+description: "Wooden play structure visualization work by Gradients for KOMPAN's Robinia Sculptures Catalogue."
+---
+{% from "gallery.njk" import render %}
+{% set captions = [
+  "A selection of images as part of the delivered renders for the Robinia Sculptures Catalogue, the range of wooden products where the story revolves around custom made design, responsible sourcing and theme play among others. &copy;2019 kompan.dk"
+] %}
+{% set images = [
+  { src: "/assets/images/woodenplaystructure/01.jpg", alt: "Wooden play structure render 1" },
+  { src: "/assets/images/woodenplaystructure/02.jpg", alt: "Wooden play structure render 2" },
+  { src: "/assets/images/woodenplaystructure/03.jpg", alt: "Wooden play structure render 3" },
+  { src: "/assets/images/woodenplaystructure/04.jpg", alt: "Wooden play structure render 4" }
+] %}
+{{ render(images, captions, "/largeplaystructures/", "/themedplaystructures/") }}

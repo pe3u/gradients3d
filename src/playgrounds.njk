@@ -1,0 +1,19 @@
+---
+layout: layout.njk
+title: Playgrounds
+description: "Playground visualization work by Gradients for KOMPAN's Main Catalogue."
+---
+{% from "gallery.njk" import render %}
+{% set captions = [
+  "Playground solutions, as part of the annually updated Main Catalogue of playground manufacturer KOMPAN. The story telling revolves around the provided play value for children's development, inclusiveness and targeted customer segments as municipalities, schools, park &amp; rec. &copy;2020-2024 kompan.dk",
+  "This animation was delivered to support the social media campaign for a new range of play structures made of recycled materials, addressing the need to reduce the carbon footprint. &copy;2024 kompan.dk"
+] %}
+{% set images = [
+  { src: "/assets/images/playgrounds/01.jpg", alt: "Playground catalogue render 1" },
+  { src: "/assets/images/playgrounds/02.jpg", alt: "Playground catalogue render 2" },
+  { src: "/assets/images/playgrounds/03.jpg", alt: "Playground catalogue render 3" },
+  { src: "/assets/images/playgrounds/04.jpg", alt: "Playground catalogue render 4" },
+  { src: "/assets/images/playgrounds/05.jpg", alt: "Playground catalogue render 5" },
+  { src: "/assets/images/playgrounds/06.jpg", alt: "Playground catalogue render 6" }
+] %}
+{{ render(images, captions, "/copy-of-landscape/", "/ropeplaystructures/") }}

@@ -1,0 +1,18 @@
+---
+layout: layout.njk
+title: Sport
+description: "Sport and fitness product visualization work by Gradients for KOMPAN."
+---
+{% from "gallery.njk" import render %}
+{% set captions = [
+  "A series of visuals supporting the fitness and sport ranges of products of the outdoor equipment manufacturer KOMPAN. The deliverables included images for the printed and digital versions of the sport and fitness catalogue. &copy;kompan.dk 2024-2025"
+] %}
+{% set images = [
+  { src: "/assets/images/sport/01.jpg", alt: "Sport equipment render 1" },
+  { src: "/assets/images/sport/02.jpg", alt: "Sport equipment render 2" },
+  { src: "/assets/images/sport/03.jpg", alt: "Sport equipment render 3" },
+  { src: "/assets/images/sport/04.jpg", alt: "Sport equipment render 4" },
+  { src: "/assets/images/sport/05.jpg", alt: "Sport equipment render 5" },
+  { src: "/assets/images/sport/06.jpg", alt: "Sport equipment render 6" }
+] %}
+{{ render(images, captions, "/themedplaystructures/", "/interior/") }}

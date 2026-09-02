@@ -1,0 +1,25 @@
+---
+layout: layout.njk
+title: Contact
+description: "Get in touch with Gradients - 3D visualization studio in Odense, Denmark."
+---
+<p class="form-note">To learn more about Gradients visualization services, or to talk about your project, use the form or call using the details below.</p>
+
+<!-- GitHub Pages serves static files only, so this form has no backend yet.
+     It currently falls back to opening the visitor's email client via a mailto action.
+     Swap the action/method for a real form backend (e.g. Formspree) when ready to go live. -->
+<form class="contact-form" action="mailto:hi@gradients.dk" method="POST" enctype="text/plain">
+  <div>
+    <label for="name">Name *</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div>
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label for="message">Message *</label>
+    <textarea id="message" name="message" required></textarea>
+  </div>
+  <button type="submit">Submit</button>
+</form>

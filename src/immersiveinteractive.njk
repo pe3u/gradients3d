@@ -1,0 +1,14 @@
+---
+layout: layout.njk
+title: Immersive / interactive
+description: "Immersive and interactive visualization work by Gradients: Mixed Reality training and real-time 3D product configurators for KOMPAN."
+---
+{% from "gallery.njk" import render %}
+{% set captions = [
+  "Immersive and interactive Mixed Reality M.V.P. set-up made to support the development of a training platform for the international installation and service teams of the outdoor equipment manufacturer KOMPAN. The experience involved the use of VR/MR headset, where one would immerse into a training environment to learn and practice the servicing of an outdoor fitness product. The set-up provided both a Mixed Reality and a Virtual Reality environment. (screen recording) &copy;kompan.dk 2025",
+  "Interactive 3D visual for an outdoor fitness product. Made to support the decision making process on the configuration of the web product pages for KOMPAN's product portfolio. Several features made this a worthy candidate: real time 3d orbiting, animated product parts, presentation mode, info pop ups, realistically rendered materials, ease of share. &copy;kompan.dk 2025"
+] %}
+{{ render([], captions, "/residential/", "/product/") }}
+
+<!-- Source page embeds screen-recording video/interactive demos here (no static images to mirror).
+     Drop an <video> or <iframe> embed for each recording once the asset is available. -->

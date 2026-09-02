@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}{% if title %} - {{ title }}{% endif %}</title>
+  <meta name="description" content="{{ description or 'Gradients is a 3D visualization studio based in Odense, Denmark, specialized in still picture, animation and interactive visuals.' }}">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/home-page/">Gradients</a>
+    <nav class="main-nav">
+      {% for item in site.nav %}
+      <a href="{{ item.url }}"{% if item.url == page.url %} class="is-active"{% endif %}>{{ item.label }}</a>
+      {% endfor %}
+    </nav>
+  </header>
+
+  <main class="site-main">
+    {% if title %}<h1 class="page-title">{{ title }}</h1>{% endif %}
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <a class="cta" href="/contact/">Get in touch! &#9993;</a>
+
+    <nav class="shortcuts">
+      <span>Shortcuts:</span>
+      {% for item in site.shortcuts %}<a href="{{ item.url }}">{{ item.label }}</a>{% if not loop.last %} &bull; {% endif %}{% endfor %}
+    </nav>
+
+    <p class="contact-line">
+      <a href="/contact/">Contact form (click)</a>
+      &nbsp;|&nbsp; Phone: {{ site.contact.phone }}
+      &nbsp;|&nbsp; Email: <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+    </p>
+    <p class="address-line">
+      Location: <a href="{{ site.contact.mapUrl }}" target="_blank" rel="noopener">{{ site.contact.address }}</a>
+      &nbsp;|&nbsp; CVR: <a href="{{ site.contact.cvrUrl }}" target="_blank" rel="noopener">{{ site.contact.cvr }}</a>
+    </p>
+    <p class="copyright">&copy; Gradients EMV {{ year }}</p>
+  </footer>
+</body>
+</html>

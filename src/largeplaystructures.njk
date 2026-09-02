@@ -1,0 +1,18 @@
+---
+layout: layout.njk
+title: Large play structures
+description: "Large play structure visualization work by Gradients for KOMPAN's Inspirational Designs Catalogue."
+---
+{% from "gallery.njk" import render %}
+{% set captions = [
+  "This selection is part of the package delivered for the 2024 Inspirational Designs Catalogue of KOMPAN. Targeting at architects, designers and planners, the visual style mixes a sketchy/conceptual environment and silhouettes with photo-realistically rendered designs. Focus is also on showcasing size capabilities and play value through dramatic overviews and close-ups. &copy;2024 kompan.dk"
+] %}
+{% set images = [
+  { src: "/assets/images/largeplaystructures/01.jpg", alt: "Large play structure render 1" },
+  { src: "/assets/images/largeplaystructures/02.jpg", alt: "Large play structure render 2" },
+  { src: "/assets/images/largeplaystructures/03.jpg", alt: "Large play structure render 3" },
+  { src: "/assets/images/largeplaystructures/04.jpg", alt: "Large play structure render 4" },
+  { src: "/assets/images/largeplaystructures/05.jpg", alt: "Large play structure render 5" },
+  { src: "/assets/images/largeplaystructures/06.jpg", alt: "Large play structure render 6" }
+] %}
+{{ render(images, captions, "/ropeplaystructures/", "/woodenplaystructure/") }}

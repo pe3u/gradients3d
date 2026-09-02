@@ -1,0 +1,16 @@
+---
+layout: layout.njk
+title: Product
+description: "Product visualization work by Gradients, including the KOMPAN x Porsche themed play structure."
+---
+{% from "gallery.njk" import render %}
+{% set captions = [
+  "The Porsche 911 themed play structure is the outcome of the collaboration between the playground manufacturer KOMPAN and Porsche. Deliverables included still imagery with a visual style that responded to both brands and were used to support the design process. &copy;kompan.dk 2025"
+] %}
+{% set images = [
+  { src: "/assets/images/product/01.jpg", alt: "Porsche 911 themed play structure - render 1" },
+  { src: "/assets/images/product/02.jpg", alt: "Porsche 911 themed play structure - render 2" },
+  { src: "/assets/images/product/03.jpg", alt: "Porsche 911 themed play structure - render 3" },
+  { src: "/assets/images/product/04.jpg", alt: "Porsche 911 themed play structure - render 4" }
+] %}
+{{ render(images, captions, "/immersiveinteractive/", "/landscape/") }}

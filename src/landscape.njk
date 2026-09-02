@@ -1,0 +1,22 @@
+---
+layout: layout.njk
+title: Landscape
+description: "Landscape architecture visualization work by Gradients, Bucharest and inclusive playground concepts for KOMPAN."
+---
+{% from "gallery.njk" import render %}
+{% set captions = [
+  "A contemplative garden carved into the earth, where sunken concrete pathways lead the visitor toward a circular underground garden &mdash; a gradual withdrawal from the surrounding world. A study of volumetric light, shadow and vegetation. Bucharest, ROU, 2015",
+  "Conceptual designs of playground solutions that focus on inclusiveness: the different area colors indicate specific play activities destined to children with f.ex. A.D.H.D., autism and with physical disabilities. Visuals created together with KOMPAN Play Institute, for Inclusive Play articles and webinars. &copy;kompan.dk 2025"
+] %}
+{% set images = [
+  { src: "/assets/images/landscape/01.jpg", alt: "Landscape design render 1" },
+  { src: "/assets/images/landscape/02.jpg", alt: "Landscape design render 2" },
+  { src: "/assets/images/landscape/03.jpg", alt: "Landscape design render 3" },
+  { src: "/assets/images/landscape/04.jpg", alt: "Landscape design render 4" },
+  { src: "/assets/images/landscape/05.jpg", alt: "Landscape design render 5" },
+  { src: "/assets/images/landscape/06.jpg", alt: "Landscape design render 6" },
+  { src: "/assets/images/landscape/07.jpg", alt: "Landscape design render 7" },
+  { src: "/assets/images/landscape/08.jpg", alt: "Landscape design render 8" },
+  { src: "/assets/images/landscape/09.jpg", alt: "Landscape design render 9" }
+] %}
+{{ render(images, captions, "/product/", "/copy-of-landscape/") }}

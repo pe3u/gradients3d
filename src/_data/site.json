@@ -1,0 +1,35 @@
+{
+  "title": "Gradients - 3D Visualization Studio",
+  "nav": [
+    { "label": "Home", "url": "/home-page/" },
+    { "label": "Services", "url": "/services/" },
+    { "label": "About", "url": "/about/" },
+    { "label": "Contact", "url": "/contact/" }
+  ],
+  "shortcuts": [
+    { "label": "Home", "url": "/home-page/" },
+    { "label": "Services", "url": "/services/" },
+    { "label": "About", "url": "/about/" },
+    { "label": "Contact", "url": "/contact/" },
+    { "label": "Product", "url": "/product/" },
+    { "label": "Landscape", "url": "/landscape/" },
+    { "label": "Public", "url": "/copy-of-landscape/" },
+    { "label": "Playgrounds", "url": "/playgrounds/" },
+    { "label": "Rope play structures", "url": "/ropeplaystructures/" },
+    { "label": "Large play structures", "url": "/largeplaystructures/" },
+    { "label": "Wooden play structures", "url": "/woodenplaystructure/" },
+    { "label": "Themed play structures", "url": "/themedplaystructures/" },
+    { "label": "Sport", "url": "/sport/" },
+    { "label": "Interior", "url": "/interior/" },
+    { "label": "Residential", "url": "/residential/" },
+    { "label": "Immersive/interactive", "url": "/immersiveinteractive/" }
+  ],
+  "contact": {
+    "phone": "(+45) 22 45 18 52",
+    "email": "hi@gradients.dk",
+    "address": "Kochsgade 31E, 5000 Odense, Denmark",
+    "mapUrl": "https://maps.app.goo.gl/eC73fhscPuE9xT3E7",
+    "cvr": "44336146",
+    "cvrUrl": "https://datacvr.virk.dk/enhed/virksomhed/44336146?fritekst=44336146&sideIndex=0&size=10"
+  }
+}

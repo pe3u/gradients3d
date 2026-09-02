@@ -1,0 +1,20 @@
+---
+layout: layout.njk
+title: Rope play structures
+description: "Rope play structure visualization work by Gradients for KOMPAN."
+---
+{% from "gallery.njk" import render %}
+{% set captions = [
+  "A selection of still images, part of the visualization package for 17 designs, that communicates the architectural freedom possible with this range of products: shape, expression, presence, transparency, integration, color, theme. &copy;2021 kompan.dk"
+] %}
+{% set images = [
+  { src: "/assets/images/ropeplaystructures/01.jpg", alt: "Rope play structure render 1" },
+  { src: "/assets/images/ropeplaystructures/02.jpg", alt: "Rope play structure render 2" },
+  { src: "/assets/images/ropeplaystructures/03.jpg", alt: "Rope play structure render 3" },
+  { src: "/assets/images/ropeplaystructures/04.jpg", alt: "Rope play structure render 4" },
+  { src: "/assets/images/ropeplaystructures/05.jpg", alt: "Rope play structure render 5" },
+  { src: "/assets/images/ropeplaystructures/06.jpg", alt: "Rope play structure render 6" },
+  { src: "/assets/images/ropeplaystructures/07.jpg", alt: "Rope play structure render 7" },
+  { src: "/assets/images/ropeplaystructures/08.jpg", alt: "Rope play structure render 8" }
+] %}
+{{ render(images, captions, "/playgrounds/", "/largeplaystructures/") }}
