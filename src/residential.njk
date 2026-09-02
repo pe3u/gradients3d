@@ -1,0 +1,16 @@
+---
+layout: layout.njk
+title: Residential
+description: "Residential architecture visualization work by Gradients, Bucharest and Snagov, Romania."
+---
+{% from "gallery.njk" import render %}
+{% set captions = [
+  "Architectural designs and visuals created to support the design process of 1. a private house in Snagov, Romania and 2. a housing prototype to support bid documentation for a modular housing solution. Bucharest, Romania, 2010-2015"
+] %}
+{% set images = [
+  { src: "/assets/images/residential/01.jpg", alt: "Residential design render 1" },
+  { src: "/assets/images/residential/02.jpg", alt: "Residential design render 2" },
+  { src: "/assets/images/residential/03.jpg", alt: "Residential design render 3" },
+  { src: "/assets/images/residential/04.jpg", alt: "Residential design render 4" }
+] %}
+{{ render(images, captions, "/interior/", "/immersiveinteractive/") }}

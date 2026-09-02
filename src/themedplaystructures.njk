@@ -1,0 +1,20 @@
+---
+layout: layout.njk
+title: Themed play structures
+description: "Themed play structure visualization work by Gradients for KOMPAN catalogues, brochures and web landing pages."
+---
+{% from "gallery.njk" import render %}
+{% set captions = [
+  "Images and animations as part of several catalogues, brochures and web landing pages, focusing on themed play. Environments, although detailed, are created to support the design themes, with attention on keeping the right balance between the &ldquo;hero&rdquo; and the background. The design's sculptural features are emphasized through light type and angle, while photo-realistic materials support the quality and durability values. &copy;2022 kompan.dk"
+] %}
+{% set images = [
+  { src: "/assets/images/themedplaystructures/01.jpg", alt: "Themed play structure render 1" },
+  { src: "/assets/images/themedplaystructures/02.jpg", alt: "Themed play structure render 2" },
+  { src: "/assets/images/themedplaystructures/03.jpg", alt: "Themed play structure render 3" },
+  { src: "/assets/images/themedplaystructures/04.jpg", alt: "Themed play structure render 4" },
+  { src: "/assets/images/themedplaystructures/05.jpg", alt: "Themed play structure render 5" },
+  { src: "/assets/images/themedplaystructures/06.jpg", alt: "Themed play structure render 6" },
+  { src: "/assets/images/themedplaystructures/07.jpg", alt: "Themed play structure render 7" },
+  { src: "/assets/images/themedplaystructures/08.jpg", alt: "Themed play structure render 8" }
+] %}
+{{ render(images, captions, "/woodenplaystructure/", "/sport/") }}

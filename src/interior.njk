@@ -1,0 +1,16 @@
+---
+layout: layout.njk
+title: Interior
+description: "Interior design visualization work by Gradients, with AMA design, Romania."
+---
+{% from "gallery.njk" import render %}
+{% set captions = [
+  "Interior designs and visuals made for companies designing/rebranding their office spaces. The visuals were used in tender applications during a 4 years collaboration with the interior design studio AMA design. &copy;amadesign.ro 2012-2017"
+] %}
+{% set images = [
+  { src: "/assets/images/interior/01.jpg", alt: "Interior design render 1" },
+  { src: "/assets/images/interior/02.jpg", alt: "Interior design render 2" },
+  { src: "/assets/images/interior/03.jpg", alt: "Interior design render 3" },
+  { src: "/assets/images/interior/04.jpg", alt: "Interior design render 4" }
+] %}
+{{ render(images, captions, "/sport/", "/residential/") }}

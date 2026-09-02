@@ -1,0 +1,20 @@
+---
+layout: layout.njk
+title: Public
+description: "Public architecture visualization work by Gradients - an exhibition pavilion in Bucharest."
+---
+{% from "gallery.njk" import render %}
+{% set captions = [
+  "A contemporary exhibition pavilion featuring a dramatic faceted glass facade with an exposed white structural steel diagrid system, set against solid concrete facades &mdash; designed to maximize transparency and create a striking geometric contrast between mass and lightness. Bucharest, ROU, 2015"
+] %}
+{% set images = [
+  { src: "/assets/images/copy-of-landscape/01.jpg", alt: "Exhibition pavilion render 1" },
+  { src: "/assets/images/copy-of-landscape/02.jpg", alt: "Exhibition pavilion render 2" },
+  { src: "/assets/images/copy-of-landscape/03.jpg", alt: "Exhibition pavilion render 3" },
+  { src: "/assets/images/copy-of-landscape/04.jpg", alt: "Exhibition pavilion render 4" },
+  { src: "/assets/images/copy-of-landscape/05.jpg", alt: "Exhibition pavilion render 5" },
+  { src: "/assets/images/copy-of-landscape/06.jpg", alt: "Exhibition pavilion render 6" },
+  { src: "/assets/images/copy-of-landscape/07.jpg", alt: "Exhibition pavilion render 7" },
+  { src: "/assets/images/copy-of-landscape/08.jpg", alt: "Exhibition pavilion render 8" }
+] %}
+{{ render(images, captions, "/landscape/", "/playgrounds/") }}
