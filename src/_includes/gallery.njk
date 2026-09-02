@@ -9,7 +9,7 @@
   <div class="gallery-grid">
     {% for img in images %}
     <figure class="gallery-item">
-      <img src="{{ img.src }}" alt="{{ img.alt }}" loading="lazy">
+      <img src="{{ img.src | url }}" alt="{{ img.alt }}" loading="lazy">
     </figure>
     {% endfor %}
   </div>
@@ -17,8 +17,8 @@
 
   {% if prev or next %}
   <nav class="gallery-nav">
-    {% if prev %}<a class="prev" href="{{ prev }}">&#10218;&#10218; Previous</a>{% endif %}
-    {% if next %}<a class="next" href="{{ next }}">Next &#10219;&#10219;</a>{% endif %}
+    {% if prev %}<a class="prev" href="{{ prev | url }}">&#10218;&#10218; Previous</a>{% endif %}
+    {% if next %}<a class="next" href="{{ next | url }}">Next &#10219;&#10219;</a>{% endif %}
   </nav>
   {% endif %}
 {% endmacro %}

@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ site.title }}{% if title %} - {{ title }}{% endif %}</title>
   <meta name="description" content="{{ description or 'Gradients is a 3D visualization studio based in Odense, Denmark, specialized in still picture, animation and interactive visuals.' }}">
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="/home-page/">Gradients</a>
+    <a class="brand" href="{{ '/home-page/' | url }}">Gradients</a>
     <nav class="main-nav">
       {% for item in site.nav %}
-      <a href="{{ item.url }}"{% if item.url == page.url %} class="is-active"{% endif %}>{{ item.label }}</a>
+      <a href="{{ item.url | url }}"{% if (item.url | url) == page.url %} class="is-active"{% endif %}>{{ item.label }}</a>
       {% endfor %}
     </nav>
   </header>
@@ -23,15 +23,15 @@
   </main>
 
   <footer class="site-footer">
-    <a class="cta" href="/contact/">Get in touch! &#9993;</a>
+    <a class="cta" href="{{ '/contact/' | url }}">Get in touch! &#9993;</a>
 
     <nav class="shortcuts">
       <span>Shortcuts:</span>
-      {% for item in site.shortcuts %}<a href="{{ item.url }}">{{ item.label }}</a>{% if not loop.last %} &bull; {% endif %}{% endfor %}
+      {% for item in site.shortcuts %}<a href="{{ item.url | url }}">{{ item.label }}</a>{% if not loop.last %} &bull; {% endif %}{% endfor %}
     </nav>
 
     <p class="contact-line">
-      <a href="/contact/">Contact form (click)</a>
+      <a href="{{ '/contact/' | url }}">Contact form (click)</a>
       &nbsp;|&nbsp; Phone: {{ site.contact.phone }}
       &nbsp;|&nbsp; Email: <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
     </p>
