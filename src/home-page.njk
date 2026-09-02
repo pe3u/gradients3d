@@ -19,7 +19,7 @@ images:
 <div class="gallery-grid home-grid">
   {% for img in images %}
   <figure class="gallery-item">
-    <img src="/assets/images/home-page/{{ img }}" alt="Gradients - selected work" loading="lazy">
+    <img src="{{ ('/assets/images/home-page/' + img) | url }}" alt="Gradients - selected work" loading="lazy">
   </figure>
   {% endfor %}
 </div>

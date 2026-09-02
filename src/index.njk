@@ -3,5 +3,5 @@ layout: layout.njk
 title: null
 permalink: /index.html
 ---
-<meta http-equiv="refresh" content="0; url=/home-page/">
-<p>Redirecting to <a href="/home-page/">Home</a>&hellip;</p>
+<meta http-equiv="refresh" content="0; url={{ '/home-page/' | url }}">
+<p>Redirecting to <a href="{{ '/home-page/' | url }}">Home</a>&hellip;</p>
